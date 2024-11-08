@@ -1,17 +1,17 @@
-import globals from 'globals';
-
+import globals from "globals";
+import babelParser from "@babel/eslint-parser";
 
 /** @type {import('eslint').Linter.Config[]} */
 export default [
   {
     files: ["**/*.js"],
     languageOptions: {
-      sourceType:  "module",
-      parser: "@babel/eslint-parser",
+      parser: babelParser,
+      sourceType: "module",
+      ecmaVersion: "latest",
       globals: {
         ...globals.node,
       },
-      ecmaVersion: "latest",
     },
   },
-]
+];
