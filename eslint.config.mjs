@@ -12,9 +12,6 @@ export default [
       globals: {
         ...globals.node,
       },
-      rules: {
-        "no-console": 0
-      }
     },
   },
 ];
