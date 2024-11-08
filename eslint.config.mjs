@@ -6,7 +6,8 @@ export default [
   {
     files: ["**/*.js"],
     languageOptions: {
-      sourceType: "commonjs",
+      sourceType:  "module",
+      parser: "@babel/eslint-parser",
       globals: {
         ...globals.node,
       },
